@@ -61,6 +61,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
         .card {
             background-color: #f1f1f1;
             padding: 20px;
@@ -70,10 +71,20 @@
             align-items: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         .card img {
             height: 180px;
             margin-right: 20px;
             border-radius: 10px;
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card p {
+            margin-bottom: 20px;
         }
 
         .tour {
@@ -105,10 +116,14 @@
             font-size: 1em;
             margin: 0;
         }
+        .tour a{
+            text-decoration: none;
+            color: #d03c3c;
+        }
 
         .button {
             text-align: center;
-            margin: 40px 0;
+            margin: 20px 0;
         }
 
         .button a {
@@ -161,29 +176,31 @@
             <h1>Lima te espera</h1>
             <p>¡No te quedes con las ganas!</p>
             <div class="card">
-                <img src="https://i.ibb.co/WpLGFvK/Imagen.png" alt="Imagen del Tour">
-                <p>¡No te pierdas el increíble itinerario que hemos preparado para ti estas Fiestas Patrias! Descárgalo
-                    ahora y vive una experiencia inolvidable.</p>
+                <img src="https://i.ibb.co/FJBd0gg/plan-de-tour-1.png" alt="Imagen del Tour">
+                <div class="card-content">
+                    <p>¡No te pierdas el increíble itinerario que hemos preparado para ti estas Fiestas Patrias! Descárgalo
+                        ahora y vive una experiencia inolvidable.</p>
+                    <div class="button">
+                        <a href="#"><strong>Click Aquí</strong></a>
+                    </div>
+                </div>
             </div>
 
             <hr>
             <p>¿Quieres más opciones en <b>Lima</b>? Encontramos esto para ti</p>
             <div class="tour-container">
                 <div class="tour">
-                    <img src="https://www.limaviptravel.pe/wp-content/uploads/2019/04/lima3.jpg" alt="Tour Histórico en Lima">
-                    <h3 href="#">Tour Histórico en Lima</h3>
+                    <img src="https://i.ibb.co/hm07sRT/lima3-1.jpg" alt="Tour Histórico en Lima">
+                    <h3><a href="#">Tour Histórico en Lima</a></h3>
                 </div>
                 <div class="tour">
-                    <img src="https://dreamy.tours/wp-content/uploads/2022/02/circuito-magico-del-agua-dreamy.jpg" alt="Lima de Noche y Circuito Mágico del Agua">
-                    <h3>Lima de Noche y Circuito Mágico del Agua</h3>
+                    <img src="https://i.ibb.co/svfX4xJ/circuito-magico-del-agua-dreamy-1.jpg" alt="Lima de Noche y Circuito Mágico del Agua">
+                    <h3><a href="#">Lima de Noche y Circuito Mágico del Agua</a></h3>
                 </div>
                 <div class="tour">
-                    <img src="https://larepublica.cronosmedia.glr.pe/original/2022/10/31/63601f58017cb640013341e2.jpg" alt="Cementerio Presbítero Maestro">
+                    <img src="https://i.ibb.co/R758nQK/presvitero-maestro-2.png" alt="Cementerio Presbítero Maestro">
                     <h3><a href="#">Cementerio Presbítero Maestro</a></h3>
                 </div>
-            </div>
-            <div class="button">
-                <a href="#"><strong>Click Aquí</strong></a>
             </div>
         </div>
     </div>
